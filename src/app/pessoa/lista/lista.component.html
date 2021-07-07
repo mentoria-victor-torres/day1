@@ -1,0 +1,16 @@
+<table>
+  <header>
+    <tr>
+      <td>id</td>
+      <td>nome</td>
+      <td>idade</td>
+    </tr>
+  </header>
+  <body>
+    <tr *ngFor="let pessoa of pessoas | async"><!--ngFor é uma built-in directive-->
+      <td style="width:150px">{{pessoa.id}}</td>
+      <td style="width:150px">{{pessoa.nome}}</td>
+      <td style="width:150px">{{pessoa.idade}}</td>
+    </tr>
+  </body>
+</table>

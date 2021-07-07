@@ -1,0 +1,7 @@
+
+Nome: <input type="text" [(ngModel)]="nome" (keyup)="print($event)"/><!--two way data binde-->
+<br/>
+Idade: <input type="number" [(ngModel)]="idade" /><!--two way data binde-->
+<br/>
+<button (click)="save()">Save</button><!--data biding output "()" neste caso output da tag button ao amitir o evento click-->
+<br/>

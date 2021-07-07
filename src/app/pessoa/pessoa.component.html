@@ -1,0 +1,9 @@
+
+<!--
+Formulário emite para o componente central uma pessoa
+Componente central pesquisa pessoas
+Componente central envia lista de pessoas para o app-lista
+-->
+<app-formulario (emiterPessoa)="save($event)"></app-formulario>
+<app-lista [pessoas]="pessoas"></app-lista><!--data biding de input-->
+<!--Tudo que estiver entre "" é do próprio componente-->
